@@ -5,11 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Alignment Room | Chiropractic Care in Darlinghurst</title>
   <meta name="description" content="Discover personalised chiropractic care at The Alignment Room in Darlinghurst. Book now for expert spine, posture, and recovery treatments." />
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  
+  <!-- Use Tailwind from official CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- For testimonials markdown rendering -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
   <script>
     async function loadTestimonials() {
       try {
-        const res = await fetch('https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/main/testimonials.md');
+        const res = await fetch('https://raw.githubusercontent.com/stretchlabgd/alignment-room-site/main/testimonials.md');
         const text = await res.text();
         document.getElementById('testimonial-feed').innerHTML = marked.parse(text);
       } catch (error) {
@@ -18,8 +24,8 @@
     }
     document.addEventListener('DOMContentLoaded', loadTestimonials);
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
+
 <body class="bg-[#fffffe] text-[#2b2c34]">
 
   <!-- Header -->
