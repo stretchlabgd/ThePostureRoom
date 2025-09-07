@@ -689,46 +689,43 @@
 
 
 
-    <!-- Booking Section -->
-    <section id="booking" class="hero-gradient">
-        <div class="container">
-            <div class="text-center" style="margin-bottom: 3rem;">
-                <h2 class="text-white" style="font-size: 2rem; font-weight: 700;">Book Your Appointment</h2>
-                <div style="width: 6rem; height: 0.25rem; background-color: white; margin: 1rem auto; border-radius: 9999px;"></div>
-                <p class="text-white" style="opacity: 0.9; font-size: 1.25rem; max-width: 600px; margin: 1rem auto 0;">Take the first step toward optimal health and wellness by scheduling your consultation today.</p>
-            </div>
-            
-            <div style="background-color: white; border-radius: 0.75rem; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); padding: 2rem; max-width: 48rem; margin: 0 auto;">
-                <div class="text-center" style="margin-bottom: 2rem;">
-                    <h3 style="font-size: 1.5rem; font-weight: 600; color: #1f2937;">Online Booking via Cliniko</h3>
-                    <p style="margin-top: 0.5rem; color: #4b5563;">Our online booking system makes it easy to find an appointment time that works for you.</p>
-                </div>
-                
-                <div style="display: flex; justify-content: center;">
-                    <a href="https://bookings.cliniko.com/YOUR_CLINIKO_ID" target="_blank" style="background-color: #3b82f6; color: white; font-weight: 600; padding: 1rem 2rem; border-radius: 0.5rem; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); display: flex; align-items: center; justify-content: center; text-decoration: none;">
-                        <svg width="24" height="24" viewBox="0 0 20 20" fill="currentColor" style="margin-right: 0.5rem;">
-                            <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path>
-                        </svg>
-                        Book Appointment Now
-                    </a>
-                </div>
-                
-                <div style="margin-top: 2rem; border-top: 1px solid #e5e7eb; padding-top: 1.5rem;">
-                    <div style="display: flex; flex-direction: column; gap: 1rem;">
-                        <div style="margin-bottom: 1rem;">
-                            <h4 style="font-weight: 600; color: #1f2937;">Need assistance?</h4>
-                            <p style="color: #4b5563; margin-top: 0.25rem;">Call us directly at (123) 456-7890</p>
-                        </div>
-                        <div>
-                            <h4 style="font-weight: 600; color: #1f2937;">Business Hours</h4>
-                            <p style="color: #4b5563; margin-top: 0.25rem;">Monday-Friday: 8am-6pm</p>
-                            <p style="color: #4b5563;">Saturday: 9am-1pm</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+   <!-- Booking Section with Cliniko -->
+<section id="booking" class="py-20 hero-gradient">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-white">Book Your Appointment</h2>
+      <div class="w-24 h-1 bg-white mx-auto mt-4 rounded-full"></div>
+      <p class="mt-4 text-xl text-white opacity-90 max-w-2xl mx-auto">Book your session directly below using our secure booking form.</p>
+    </div>
+
+    <div class="bg-white rounded-xl shadow-xl p-4 md:p-8 max-w-5xl mx-auto">
+      <!-- Cliniko Booking iFrame -->
+      <iframe id="cliniko-44533978" 
+              src="https://the-posture-room.au4.cliniko.com/bookings?embedded=true" 
+              frameborder="0" 
+              scrolling="auto" 
+              width="100%" 
+              height="1000" 
+              style="pointer-events: auto;"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- Cliniko Booking Resizer Script -->
+<script type="text/javascript">
+  window.addEventListener('message', function handleIFrameMessage(e) {
+    var clinikoBookings = document.getElementById('cliniko-44533978');
+    if (typeof e.data !== 'string') return;
+    if (e.data.search('cliniko-bookings-resize') > -1) {
+      var height = Number(e.data.split(':')[1]);
+      clinikoBookings.style.height = height + 'px';
+    }
+    if (e.data.search('cliniko-bookings-page') > -1) {
+      clinikoBookings.scrollIntoView();
+    }
+  });
+</script>
+
 
     <!-- Location Section -->
     <section id="location" style="background-color: white;">
