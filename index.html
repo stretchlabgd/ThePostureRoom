@@ -1,1024 +1,629 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Posture Room | Your Path to Wellness in Darlinghurst</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Posture Room | Chiropractor & Posture Care in Darlinghurst</title>
 
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17582359728"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Canonical & Favicon -->
+  <link rel="canonical" href="https://thepostureroom.com.au/" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <meta name="theme-color" content="#3b82f6" />
 
-  gtag('config', 'AW-17582359728');
-</script>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
-<!-- NEW: Meta description -->
-  <meta name="description" content="The Posture Room offers expert chiropractic and posture correction in Darlinghurst. Book your session with Dr. Steven Kuan today.">
-
-<!-- NEW: LocalBusiness / Chiropractic Schema -->
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Chiropractic",
-      "name": "The Posture Room",
-      "image": "https://thepostureroom.com.au/images/posture-logo.png",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "216 Crown Street",
-        "addressLocality": "Darlinghurst",
-        "addressRegion": "NSW",
-        "postalCode": "2010",
-        "addressCountry": "AU"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": -33.877877,
-        "longitude": 151.214814
-      },
-      "url": "https://thepostureroom.com.au",
-      "telephone": "+61 493 803 236"
-    }
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17582359728"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17582359728');
   </script>
 
-    
-    <style>
-        /* Reset and base styles */
-        *, *::before, *::after {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        
-        body {
-            font-family: 'Poppins', sans-serif;
-            line-height: 1.5;
-            color: #333;
-            scroll-behavior: smooth;
-            background-color: #f9fafb;
-        }
-        
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-        
-        img {
-            max-width: 100%;
-        }
-        
-        /* Container */
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1.5rem;
-        }
-        
-        /* Typography */
-        h1, h2, h3, h4, h5, h6 {
-            margin-bottom: 0.5rem;
-            line-height: 1.2;
-        }
-        
-        h1 {
-            font-size: 2.5rem;
-        }
-        
-        h2 {
-            font-size: 2rem;
-        }
-        
-        h3 {
-            font-size: 1.5rem;
-        }
-        
-        p {
-            margin-bottom: 1rem;
-        }
-        
-        /* Utilities */
-        .text-center {
-            text-align: center;
-        }
-        
-        .text-white {
-            color: white;
-        }
-        
-        .text-gray-600 {
-            color: #4b5563;
-        }
-        
-        .text-gray-800 {
-            color: #1f2937;
-        }
-        
-        .text-blue-500 {
-            color: #3b82f6;
-        }
-        
-        .text-yellow-400 {
-            color: #fbbf24;
-        }
-        
-        .bg-white {
-            background-color: white;
-        }
-        
-        .bg-gray-50 {
-            background-color: #f9fafb;
-        }
-        
-        .bg-gray-800 {
-            background-color: #1f2937;
-        }
-        
-        .bg-blue-500 {
-            background-color: #3b82f6;
-        }
-        
-        .bg-blue-100 {
-            background-color: #dbeafe;
-        }
-        
-        .font-bold {
-            font-weight: 700;
-        }
-        
-        .font-semibold {
-            font-weight: 600;
-        }
-        
-        .rounded-lg {
-            border-radius: 0.5rem;
-        }
-        
-        .rounded-xl {
-            border-radius: 0.75rem;
-        }
-        
-        .rounded-full {
-            border-radius: 9999px;
-        }
-        
-        .shadow-md {
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-        }
-        
-        .shadow-lg {
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-        }
-        
-        .shadow-xl {
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        }
-        
-        /* Layout */
-        .flex {
-            display: flex;
-        }
-        
-        .flex-col {
-            flex-direction: column;
-        }
-        
-        .items-center {
-            align-items: center;
-        }
-        
-        .items-start {
-            align-items: flex-start;
-        }
-        
-        .justify-center {
-            justify-content: center;
-        }
-        
-        .justify-between {
-            justify-content: space-between;
-        }
-        
-        .space-x-4 > * + * {
-            margin-left: 1rem;
-        }
-        
-        .space-x-8 > * + * {
-            margin-left: 2rem;
-        }
-        
-        .space-y-2 > * + * {
-            margin-top: 0.5rem;
-        }
-        
-        .space-y-3 > * + * {
-            margin-top: 0.75rem;
-        }
-        
-        .space-y-4 > * + * {
-            margin-top: 1rem;
-        }
-        
-        .grid {
-            display: grid;
-        }
-        
-        .grid-cols-1 {
-            grid-template-columns: repeat(1, minmax(0, 1fr));
-        }
-        
-        .gap-8 {
-            gap: 2rem;
-        }
-        
-        .gap-10 {
-            gap: 2.5rem;
-        }
-        
-        /* Specific Components */
-        .hero-gradient {
-            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-            padding-top: 8rem;
-            padding-bottom: 5rem;
-        }
-        
-        .benefit-card {
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        
-        .benefit-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        }
-        
-        .map-container {
-            height: 400px;
-            width: 100%;
-        }
-        
-        /* Navigation */
-        nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 10;
-            background-color: white;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-        }
-        
-        .nav-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 1.5rem;
-        }
-        
-        .nav-logo {
-            display: flex;
-            align-items: center;
-        }
-        
-        .nav-links {
-            display: none;
-        }
-        
-        .nav-links a {
-            margin-left: 2rem;
-            color: #4b5563;
-            transition: color 0.3s;
-        }
-        
-        .nav-links a:hover {
-            color: #3b82f6;
-        }
-        
-        .nav-links a.btn {
-            background-color: #3b82f6;
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 0.5rem;
-            transition: background-color 0.3s;
-        }
-        
-        .nav-links a.btn:hover {
-            background-color: #2563eb;
-        }
-        
-        .mobile-menu-btn {
-            display: block;
-            background: none;
-            border: none;
-            cursor: pointer;
-            color: #4b5563;
-        }
-        
-        .mobile-menu {
-            display: none;
-            padding-bottom: 1rem;
-            background-color: white;
-        }
-        
-        .mobile-menu.active {
-            display: block;
-        }
-        
-        .mobile-menu a {
-            display: block;
-            padding: 0.5rem 1.5rem;
-            color: #4b5563;
-        }
-        
-        .mobile-menu a:hover {
-            background-color: #eff6ff;
-        }
-        
-        .mobile-menu a.btn {
-            margin: 0.5rem 1.5rem;
-            background-color: #3b82f6;
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 0.5rem;
-            text-align: center;
-        }
-        
-        /* Sections */
-        section {
-            padding: 5rem 0;
-        }
-        
-        .section-header {
-            text-align: center;
-            margin-bottom: 4rem;
-        }
-        
-        .section-header h2 {
-            font-size: 2rem;
-            font-weight: 700;
-            color: #1f2937;
-        }
-        
-        .section-divider {
-            width: 6rem;
-            height: 0.25rem;
-            background-color: #3b82f6;
-            margin: 1rem auto;
-            border-radius: 9999px;
-        }
-        
-        /* Services */
-        .service-card {
-            background-color: #f9fafb;
-            border-radius: 0.75rem;
-            padding: 2rem;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-            transition: box-shadow 0.3s;
-        }
-        
-        .service-card:hover {
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-        }
-        
-        .service-icon {
-            background-color: #dbeafe;
-            width: 4rem;
-            height: 4rem;
-            border-radius: 9999px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 1.5rem;
-        }
-        
-        /* Benefits */
-        .emoji-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-        
-        /* Footer */
-        footer {
-            background-color: #1f2937;
-            color: white;
-            padding: 3rem 0;
-        }
-        
-        .footer-divider {
-            border-top: 1px solid #374151;
-            margin: 3rem 0 2rem;
-        }
-        
-        .social-links {
-            display: flex;
-            gap: 1rem;
-        }
-        
-        .social-links a {
-            color: #9ca3af;
-            transition: color 0.3s;
-        }
-        
-        .social-links a:hover {
-            color: white;
-        }
-        
-        /* Media Queries */
-        @media (min-width: 768px) {
-            h1 {
-                font-size: 3rem;
-            }
-            
-            .flex-md-row {
-                flex-direction: row;
-            }
-            
-            .grid-cols-md-2 {
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-            }
-            
-            .grid-cols-md-3 {
-                grid-template-columns: repeat(3, minmax(0, 1fr));
-            }
-            
-            .w-md-1\/2 {
-                width: 50%;
-            }
-            
-            .mb-md-0 {
-                margin-bottom: 0;
-            }
-            
-            .nav-links {
-                display: flex;
-                align-items: center;
-            }
-            
-            .mobile-menu-btn {
-                display: none;
-            }
-        }
-        
-        @media (min-width: 1024px) {
-            .grid-cols-lg-3 {
-                grid-template-columns: repeat(3, minmax(0, 1fr));
-            }
-        }
-    </style>
+  <!-- Meta -->
+  <meta name="description" content="The Posture Room—expert chiropractic and posture correction in Darlinghurst. Book with Dr Steven Kuan to relieve pain, improve mobility, and feel your best." />
+  <!-- Open Graph -->
+  <meta property="og:title" content="The Posture Room | Chiropractor & Posture Care in Darlinghurst" />
+  <meta property="og:description" content="Feel better, move better. Chiropractic, posture correction, soft-tissue therapy and rehab in Darlinghurst." />
+  <meta property="og:url" content="https://thepostureroom.com.au/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://thepostureroom.com.au/images/posture-og.jpg" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- LocalBusiness / MedicalBusiness + Chiropractic specialty -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "name": "The Posture Room",
+    "image": "https://thepostureroom.com.au/images/posture-logo.png",
+    "url": "https://thepostureroom.com.au/",
+    "telephone": "+61 493 803 236",
+    "email": "info@thepostureroom.com.au",
+    "priceRange": "$$",
+    "medicalSpecialty": "https://schema.org/Chiropractic",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "216 Crown Street",
+      "addressLocality": "Darlinghurst",
+      "addressRegion": "NSW",
+      "postalCode": "2010",
+      "addressCountry": "AU"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -33.877877,
+      "longitude": 151.214814
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Wednesday","Thursday"], "opens": "09:00", "closes": "18:00" }
+    ],
+    "sameAs": [
+      "https://www.instagram.com/thepostureroom",
+      "https://www.facebook.com/thepostureroom"
+    ]
+  }
+  </script>
+
+  <style>
+    /* Reset / Base */
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--brand:#3b82f6;--ink:#1f2937;--muted:#4b5563;--bg:#f9fafb}
+    html{scroll-behavior:smooth}
+    body{font-family:'Poppins',sans-serif;line-height:1.5;color:#333;background-color:var(--bg)}
+    a{text-decoration:none;color:inherit}
+    img{max-width:100%;display:block}
+
+    /* Layout Utilities */
+    .container{width:100%;max-width:1200px;margin:0 auto;padding:0 1.5rem}
+    .flex{display:flex}.flex-col{flex-direction:column}
+    .items-center{align-items:center}.items-start{align-items:flex-start}
+    .justify-between{justify-content:space-between}.justify-center{justify-content:center}
+    .grid{display:grid}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}
+    .gap-8{gap:2rem}.gap-10{gap:2.5rem}
+    .rounded-lg{border-radius:.5rem}.rounded-xl{border-radius:.75rem}
+    .shadow-md{box-shadow:0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -1px rgba(0,0,0,.06)}
+    .shadow-lg{box-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05)}
+    .text-center{text-align:center}.font-bold{font-weight:700}.font-semibold{font-weight:600}
+    .hero-gradient{background:linear-gradient(135deg,#4facfe 0%,#00f2fe 100%);padding:8rem 0 5rem}
+    section{padding:5rem 0}
+
+    /* Headings */
+    h1,h2,h3{line-height:1.2;margin-bottom:.5rem}
+    h1{font-size:2.5rem} h2{font-size:2rem} h3{font-size:1.5rem}
+    p{margin-bottom:1rem}
+
+    /* Nav */
+    nav{position:fixed;top:0;left:0;width:100%;z-index:10;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.1)}
+    .nav-container{display:flex;justify-content:space-between;align-items:center;padding:1rem 1.5rem}
+    .nav-links{display:none}
+    .nav-links a{margin-left:2rem;color:var(--muted)}
+    .nav-links a:hover{color:var(--brand)}
+    .btn{background:var(--brand);color:#fff;padding:.5rem 1rem;border-radius:.5rem}
+    .btn-outline{border:2px solid #fff;color:#fff;padding:.75rem 1.5rem;border-radius:.5rem}
+    .btn-light{background:#fff;color:var(--brand);font-weight:600;padding:.75rem 1.5rem;border-radius:.5rem;box-shadow:0 10px 15px -3px rgba(0,0,0,.1)}
+    .mobile-menu-btn{display:block;background:none;border:none;cursor:pointer;color:var(--muted)}
+    .mobile-menu{display:none;padding-bottom:1rem;background:#fff}
+    .mobile-menu.active{display:block}
+    .mobile-menu a{display:block;padding:.5rem 1.5rem;color:var(--muted)}
+    .mobile-menu a:hover{background:#eff6ff}
+
+    /* Cards / Sections */
+    .section-header{text-align:center;margin-bottom:4rem}
+    .section-divider{width:6rem;height:.25rem;background:var(--brand);margin:1rem auto;border-radius:9999px}
+    .service-card{background:#fff;border-radius:.75rem;padding:2rem;box-shadow:0 4px 6px -1px rgba(0,0,0,.1)}
+    .service-icon{background:#dbeafe;width:4rem;height:4rem;border-radius:9999px;display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem}
+    .benefit-card{transition:transform .3s,box-shadow .3s}
+    .benefit-card:hover{transform:translateY(-5px);box-shadow:0 10px 20px rgba(0,0,0,.1)}
+    footer{background:#1f2937;color:#fff;padding:3rem 0}
+
+    /* Responsive */
+    @media (min-width:768px){
+      h1{font-size:3rem}
+      .flex-md-row{flex-direction:row}
+      .grid-cols-md-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .grid-cols-md-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+      .w-md-1\/2{width:50%}
+      .mb-md-0{margin-bottom:0}
+      .nav-links{display:flex;align-items:center}
+      .mobile-menu-btn{display:none}
+    }
+    @media (min-width:1024px){
+      .grid-cols-lg-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+    }
+  </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <div class="container nav-container">
-            <div class="nav-logo">
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="#3b82f6">
-                    <path d="M19.57 8.676a7.312 7.312 0 0 0-7.57-7.676 7.312 7.312 0 0 0-7.57 7.676c0 7.892 7.57 14.324 7.57 14.324s7.57-6.432 7.57-14.324zm-7.57 5.324a3.001 3.001 0 0 1 0-6 3.001 3.001 0 0 1 0 6z"></path>
-                </svg>
-                <span style="margin-left: 0.5rem; font-size: 1.5rem; font-weight: 700; color: #1f2937;">The Posture Room </span>
-            </div>
-            <div class="nav-links">
-                <a href="#services">Services</a>
-                <a href="#benefits">Benefits</a>
-                <a href="#vision">Our Vision</a>
-                <a href="#location">Location</a>
-                <a href="#booking" class="btn">Book Now</a>
-            </div>
-            <button id="menu-toggle" class="mobile-menu-btn">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-            </button>
-        </div>
-        <div id="mobile-menu" class="mobile-menu">
-            <a href="#services">Services</a>
-            <a href="#benefits">Benefits</a>
-            <a href="#vision">Our Vision</a>
-            <a href="#location">Location</a>
-            <a href="#booking" class="btn">Book Now</a>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero-gradient">
-        <div class="container">
-            <div class="flex flex-col flex-md-row items-center">
-                <div class="w-md-1/2 mb-10 mb-md-0" style="padding-right: 2rem;">
-                    <!--<h1 class="text-white" style="margin-bottom: 1rem;">Your Journey to Better Health Starts Here</h1>-->
-                    <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight"> Darlinghurst’s Trusted Chiropractor for Posture, Pain & Real Results</h1>
-                    <!--<p class="text-white" style="opacity: 0.9; font-size: 1.25rem; margin-bottom: 2rem;">Experience the transformative power of professional chiropractic care tailored to your unique needs.</p>-->
-                    <p class="mt-4 text-xl text-white opacity-90">Helping everyone in Darlinghurst feel better, move better, and live pain-free with expert chiropractic care by Dr Steven Kuan.</p>
-                    <div class="flex flex-col flex-md-row" style="gap: 1rem;">
-                        <a href="#booking" style="background-color: white; color: #3b82f6; font-weight: 600; padding: 0.75rem 1.5rem; border-radius: 0.5rem; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); text-align: center; display: inline-block; margin-bottom: 1rem;">Book Appointment</a>
-                        <a href="#services" style="border: 2px solid white; color: white; font-weight: 600; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-align: center; display: inline-block;">Learn More</a>
-                    </div>
-                </div>
-                <div class="w-md-1/2 flex justify-center">
-                    <svg width="100%" height="400" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="#ffffff" fill-opacity="0.7" d="M400,150 C450,150 500,200 500,250 C500,300 450,350 400,350 C350,350 300,300 300,250 C300,200 350,150 400,150 Z"></path>
-                        <path fill="#ffffff" fill-opacity="0.5" d="M400,100 C480,100 550,170 550,250 C550,330 480,400 400,400 C320,400 250,330 250,250 C250,170 320,100 400,100 Z"></path>
-                        <path fill="#ffffff" fill-opacity="0.3" d="M400,50 C510,50 600,140 600,250 C600,360 510,450 400,450 C290,450 200,360 200,250 C200,140 290,50 400,50 Z"></path>
-                        <g transform="translate(350, 220)">
-                            <path fill="#ffffff" d="M50,0 C60,0 70,10 70,20 L70,80 C70,90 60,100 50,100 L50,120 L30,100 L20,100 C10,100 0,90 0,80 L0,20 C0,10 10,0 20,0 Z"></path>
-                            <path fill="#4facfe" d="M25,25 L45,25 M25,40 L45,40 M25,55 L35,55"></path>
-                        </g>
-                        <g transform="translate(400, 250)">
-                            <path fill="#ffffff" d="M0,-30 C16.5,-30 30,-16.5 30,0 C30,16.5 16.5,30 0,30 C-16.5,30 -30,16.5 -30,0 C-30,-16.5 -16.5,-30 0,-30 Z"></path>
-                            <path fill="#4facfe" d="M0,-15 L0,15 M-15,0 L15,0"></path>
-                        </g>
-                    </svg>
-                </div>
-            </div>
-        </div>
-    </section>
-
- <!-- SITELINK ALIAS: About -->
-<div id="about" style="position:relative;top:-80px;height:0;"></div>
-<!-- /SITELINK ALIAS -->   
-<!-- Meet Steven Section -->
-<section id="meet-steven" class="py-20 bg-white">
-  <div class="container mx-auto px-6 flex flex-col md:flex-row items-center md:items-start">
-    
-    <!-- Image (no unnecessary wrapper) -->
-    <img src="./images/steven.jpg" alt="Dr Steven Kuan"
-      class="rounded-xl shadow-lg mx-auto md:mr-8 mb-6 md:mb-0 object-cover max-w-[150px]" />
-
-    <!-- Text -->
-    <div class="w-full md:flex-1 text-center md:text-left">
-      <h2 class="text-3xl font-bold text-[#2b2c34] mb-4">Meet Dr Steven Kuan</h2>
-      <p class="text-lg text-[#2b2c34] mb-4">
-        Your trusted chiropractor at The Posture Room. Steven combines clinical precision with a passion for holistic wellbeing, helping clients feel realigned, recovered, and rejuvenated.
-      </p>
-      <p class="text-[#2b2c34]">
-        With experience treating members of StretchLab and high-end functional gyms, Steven brings specialist technique to the heart of Darlinghurst.
-      </p>
+  <!-- Navigation -->
+  <nav aria-label="Primary">
+    <div class="container nav-container">
+      <div class="nav-logo" aria-label="The Posture Room">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="#3b82f6" role="img" aria-hidden="true">
+          <path d="M19.57 8.676a7.312 7.312 0 0 0-7.57-7.676 7.312 7.312 0 0 0-7.57 7.676c0 7.892 7.57 14.324 7.57 14.324s7.57-6.432 7.57-14.324zm-7.57 5.324a3.001 3.001 0 0 1 0-6 3.001 3.001 0 0 1 0 6z"></path>
+        </svg>
+        <span style="margin-left:.5rem;font-size:1.5rem;font-weight:700;color:var(--ink)">The Posture Room</span>
+      </div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#benefits">Benefits</a>
+        <a href="#vision">Our Vision</a>
+        <a href="#location">Location</a>
+        <a href="#booking" class="btn">Book Now</a>
+      </div>
+      <button id="menu-toggle" class="mobile-menu-btn" aria-label="Toggle menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
     </div>
-
-  </div>
-</section>
-
-    
-    <!-- Services Section -->
-    <section id="services" style="background-color: white;">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our Chiropractic Services</h2>
-                <div class="section-divider"></div>
-                <p style="max-width: 600px; margin: 1rem auto 0; color: #4b5563; font-size: 1.25rem;">We offer a comprehensive range of chiropractic treatments designed to address your specific health concerns.</p>
-            </div>
-            
-            <div class="grid grid-cols-1 grid-cols-md-2 grid-cols-lg-3 gap-10">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="32" height="32" viewBox="0 0 20 20" fill="#3b82f6">
-                            <path d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z"></path>
-                        </svg>
-                    </div>
-                    <h3 style="color: #1f2937; margin-bottom: 0.75rem;">Spinal Adjustments</h3>
-                    <p style="color: #4b5563;">Our core service focuses on correcting misalignments in the spine to improve nervous system function and overall health.</p>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="32" height="32" viewBox="0 0 20 20" fill="#3b82f6">
-                            <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                        </svg>
-                    </div>
-                    <h3 style="color: #1f2937; margin-bottom: 0.75rem;">Soft Tissue Therapy</h3>
-                    <p style="color: #4b5563;">Targeted massage and myofascial release techniques to address muscle tension and improve mobility.</p>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="32" height="32" viewBox="0 0 20 20" fill="#3b82f6">
-                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 001.414 1.414L9 9.414V13a1 1 0 102 0V9.414l1.293 1.293a1 1 0 001.414-1.414z" clip-rule="evenodd"></path>
-                        </svg>
-                    </div>
-                    <h3 style="color: #1f2937; margin-bottom: 0.75rem;">Posture Correction</h3>
-                    <p style="color: #4b5563;">Comprehensive assessment and personalized plans to improve posture and prevent future issues.</p>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="32" height="32" viewBox="0 0 20 20" fill="#3b82f6">
-                            <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"></path>
-                        </svg>
-                    </div>
-                    <h3 style="color: #1f2937; margin-bottom: 0.75rem;">Rehabilitation Exercises</h3>
-                    <p style="color: #4b5563;">Custom exercise programs to strengthen key muscle groups and support long-term spinal health.</p>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="32" height="32" viewBox="0 0 20 20" fill="#3b82f6">
-                            <path fill-rule="evenodd" d="M7 2a1 1 0 00-.707 1.707L7 4.414v3.758a1 1 0 01-.293.707l-4 4C.817 14.769 2.156 18 4.828 18h10.343c2.673 0 4.012-3.231 2.122-5.121l-4-4A1 1 0 0113 8.172V4.414l.707-.707A1 1 0 0013 2H7zm2 6.172V4h2v4.172a3 3 0 00.879 2.12l1.027 1.028a4 4 0 00-2.171.102l-.47.156a4 4 0 01-2.53 0l-.563-.187a1.993 1.993 0 00-.114-.035l1.063-1.063A3 3 0 009 8.172z" clip-rule="evenodd"></path>
-                        </svg>
-                    </div>
-                    <h3 style="color: #1f2937; margin-bottom: 0.75rem;">Nutritional Advice</h3>
-                    <p style="color: #4b5563;">Guidance on anti-inflammatory diets and supplements to support your body's natural healing processes.</p>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="32" height="32" viewBox="0 0 20 20" fill="#3b82f6">
-                            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path>
-                        </svg>
-                    </div>
-                    <h3 style="color: #1f2937; margin-bottom: 0.75rem;">Preventative Care</h3>
-                    <p style="color: #4b5563;">Ongoing wellness plans to maintain optimal spinal health and prevent future injuries or pain.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Benefits Section -->
-    <section id="benefits" style="background-color: #f9fafb;">
-        <div class="container">
-            <div class="section-header">
-                <h2>Benefits of Chiropractic Care</h2>
-                <div class="section-divider"></div>
-                <p style="max-width: 600px; margin: 1rem auto 0; color: #4b5563; font-size: 1.25rem;">Discover how regular chiropractic treatments can improve your overall health and wellbeing.</p>
-            </div>
-            
-            <div class="grid grid-cols-1 grid-cols-md-3 gap-8">
-                <div class="benefit-card" style="background-color: white; border-radius: 0.75rem; padding: 2rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
-                    <div class="emoji-icon">🔄</div>
-                    <h3 style="color: #1f2937; margin-bottom: 0.75rem;">Pain Relief</h3>
-                    <p style="color: #4b5563;">Effective treatment for back pain, neck pain, headaches, and joint discomfort without relying on medication.</p>
-                </div>
-                
-                <div class="benefit-card" style="background-color: white; border-radius: 0.75rem; padding: 2rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
-                    <div class="emoji-icon">⚡</div>
-                    <h3 style="color: #1f2937; margin-bottom: 0.75rem;">Improved Mobility</h3>
-                    <p style="color: #4b5563;">Restore range of motion and flexibility through targeted adjustments and soft tissue work.</p>
-                </div>
-                
-                <div class="benefit-card" style="background-color: white; border-radius: 0.75rem; padding: 2rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
-                    <div class="emoji-icon">🧠</div>
-                    <h3 style="color: #1f2937; margin-bottom: 0.75rem;">Enhanced Nervous System</h3>
-                    <p style="color: #4b5563;">Optimize neural communication throughout your body for better overall function.</p>
-                </div>
-                
-                <div class="benefit-card" style="background-color: white; border-radius: 0.75rem; padding: 2rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
-                    <div class="emoji-icon">💤</div>
-                    <h3 style="color: #1f2937; margin-bottom: 0.75rem;">Better Sleep</h3>
-                    <p style="color: #4b5563;">Address physical discomfort that may be interfering with quality sleep patterns.</p>
-                </div>
-                
-                <div class="benefit-card" style="background-color: white; border-radius: 0.75rem; padding: 2rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
-                    <div class="emoji-icon">🛡️</div>
-                    <h3 style="color: #1f2937; margin-bottom: 0.75rem;">Stronger Immunity</h3>
-                    <p style="color: #4b5563;">Support your immune system through improved nervous system function and reduced stress.</p>
-                </div>
-                
-                <div class="benefit-card" style="background-color: white; border-radius: 0.75rem; padding: 2rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
-                    <div class="emoji-icon">🧘</div>
-                    <h3 style="color: #1f2937; margin-bottom: 0.75rem;">Stress Reduction</h3>
-                    <p style="color: #4b5563;">Experience decreased tension and improved mood through holistic care approaches.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Vision Section -->
-    <section id="vision" style="background-color: white;">
-        <div class="container">
-            <div class="flex flex-col flex-md-row items-center">
-                <div class="w-md-1/2 mb-10 mb-md-0" style="padding-right: 1rem;">
-                    <svg width="100%" height="300" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="300" cy="200" r="150" fill="#4facfe" opacity="0.1"/>
-                        <circle cx="300" cy="200" r="120" fill="#4facfe" opacity="0.2"/>
-                        <circle cx="300" cy="200" r="90" fill="#4facfe" opacity="0.3"/>
-                        <path d="M300,110 L300,290 M210,200 L390,200" stroke="#4facfe" stroke-width="8" stroke-linecap="round"/>
-                        <circle cx="300" cy="200" r="30" fill="#4facfe"/>
-                        <path d="M240,140 C240,140 270,110 300,110 C330,110 360,140 360,140" stroke="#4facfe" stroke-width="6" fill="none" stroke-linecap="round"/>
-                        <path d="M240,260 C240,260 270,290 300,290 C330,290 360,260 360,260" stroke="#4facfe" stroke-width="6" fill="none" stroke-linecap="round"/>
-                    </svg>
-                </div>
-                <div class="w-md-1/2">
-                    <h2 style="color: #1f2937; font-size: 2rem; font-weight: 700;">Our Vision</h2>
-                    <div style="width: 6rem; height: 0.25rem; background-color: #3b82f6; margin: 1rem 0; border-radius: 9999px;"></div>
-                    <p style="margin-top: 1.5rem; font-size: 1.125rem; color: #4b5563;">At The Posture Room, we envision a community where individuals achieve their optimal health potential through natural, holistic care. We believe that true wellness comes from within, and our mission is to remove interference to your body's innate healing abilities.</p>
-                    <p style="margin-top: 1rem; font-size: 1.125rem; color: #4b5563;">We are committed to:</p>
-                    <ul style="margin-top: 1rem; list-style: none;">
-                        <li style="display: flex; align-items: flex-start; margin-bottom: 0.75rem;">
-                            <svg width="24" height="24" viewBox="0 0 20 20" fill="#3b82f6" style="margin-right: 0.5rem; flex-shrink: 0;">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            <span style="color: #4b5563;">Providing personalized care that addresses the root cause of health issues, not just symptoms</span>
-                        </li>
-                        <li style="display: flex; align-items: flex-start; margin-bottom: 0.75rem;">
-                            <svg width="24" height="24" viewBox="0 0 20 20" fill="#3b82f6" style="margin-right: 0.5rem; flex-shrink: 0;">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            <span style="color: #4b5563;">Educating our patients about the importance of spinal health and its connection to overall wellness</span>
-                        </li>
-                        <li style="display: flex; align-items: flex-start; margin-bottom: 0.75rem;">
-                            <svg width="24" height="24" viewBox="0 0 20 20" fill="#3b82f6" style="margin-right: 0.5rem; flex-shrink: 0;">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            <span style="color: #4b5563;">Creating treatment plans that empower patients to take an active role in their health journey</span>
-                        </li>
-                        <li style="display: flex; align-items: flex-start;">
-                            <svg width="24" height="24" viewBox="0 0 20 20" fill="#3b82f6" style="margin-right: 0.5rem; flex-shrink: 0;">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            <span style="color: #4b5563;">Fostering a welcoming environment where patients feel heard, valued, and supported</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-
-   <!-- Booking Section with Cliniko -->
-<section id="booking" class="py-20 hero-gradient">
-  <div class="container mx-auto px-6">
-    <div class="text-center mb-12">
-      <h2 class="text-3xl font-bold text-white">Book Your Appointment</h2>
-      <div class="w-24 h-1 bg-white mx-auto mt-4 rounded-full"></div>
-      <p class="mt-4 text-xl text-white opacity-90 max-w-2xl mx-auto">Book your session directly below using our secure booking form.</p>
+    <div id="mobile-menu" class="mobile-menu" role="dialog" aria-label="Mobile menu">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#benefits">Benefits</a>
+      <a href="#vision">Our Vision</a>
+      <a href="#location">Location</a>
+      <a href="#booking" class="btn" style="margin:0.5rem 1.5rem;text-align:center">Book Now</a>
     </div>
+  </nav>
 
-    <div class="bg-white rounded-xl shadow-xl p-4 md:p-8 max-w-5xl mx-auto">
-      <!-- Cliniko Booking iFrame -->
-      <iframe id="cliniko-44533978" 
-              src="https://the-posture-room.au4.cliniko.com/bookings?embedded=true" 
-              frameborder="0" 
-              scrolling="auto" 
-              width="100%" 
-              height="1000" 
-              style="pointer-events: auto;"></iframe>
+  <!-- Hero -->
+  <section class="hero-gradient" id="home" aria-labelledby="hero-title">
+    <div class="container">
+      <div class="flex flex-col flex-md-row items-center">
+        <div class="w-md-1/2 mb-10 mb-md-0" style="padding-right:2rem">
+          <h1 id="hero-title" class="font-bold" style="color:#fff">
+            Darlinghurst’s Trusted Chiropractor for Posture, Pain & Real Results
+          </h1>
+          <p class="mt-4" style="font-size:1.25rem;color:#fff;opacity:.9">
+            Helping you feel better, move better, and live pain-free with expert chiropractic care by Dr Steven Kuan.
+          </p>
+          <div class="flex flex-col flex-md-row" style="gap:1rem;margin-top:1.25rem">
+            <a href="#booking" class="btn-light">Book Appointment</a>
+            <a href="#services" class="btn-outline">Learn More</a>
+          </div>
+        </div>
+        <div class="w-md-1/2 flex justify-center" aria-hidden="true">
+          <svg width="100%" height="400" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="">
+            <path fill="#ffffff" fill-opacity="0.7" d="M400,150 C450,150 500,200 500,250 C500,300 450,350 400,350 C350,350 300,300 300,250 C300,200 350,150 400,150 Z"></path>
+            <path fill="#ffffff" fill-opacity="0.5" d="M400,100 C480,100 550,170 550,250 C550,330 480,400 400,400 C320,400 250,330 250,250 C250,170 320,100 400,100 Z"></path>
+            <path fill="#ffffff" fill-opacity="0.3" d="M400,50 C510,50 600,140 600,250 C600,360 510,450 400,450 C290,450 200,360 200,250 C200,140 290,50 400,50 Z"></path>
+          </svg>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Cliniko Booking Resizer Script -->
-<script type="text/javascript">
-  window.addEventListener('message', function handleIFrameMessage(e) {
-    var clinikoBookings = document.getElementById('cliniko-44533978');
-    if (typeof e.data !== 'string') return;
-    if (e.data.search('cliniko-bookings-resize') > -1) {
-      var height = Number(e.data.split(':')[1]);
-      clinikoBookings.style.height = height + 'px';
-    }
-    if (e.data.search('cliniko-bookings-page') > -1) {
-      clinikoBookings.scrollIntoView();
-    }
-  });
-</script>
+  <!-- Anchor alias -->
+  <div id="about" style="position:relative;top:-80px;height:0"></div>
 
+  <!-- Meet Steven -->
+  <section id="meet-steven" class="bg-white" aria-labelledby="meet-title">
+    <div class="container flex flex-col md:flex-row items-center md:items-start">
+      <img src="./images/steven.jpg" alt="Dr Steven Kuan, Chiropractor" loading="lazy"
+           class="rounded-xl shadow-lg mx-auto md:mr-8 mb-6 md:mb-0 object-cover" style="max-width:150px" />
+      <div class="w-full md:flex-1 text-center md:text-left">
+        <h2 id="meet-title" class="text-3xl font-bold" style="color:#2b2c34;margin-bottom:1rem">Meet Dr Steven Kuan</h2>
+        <p class="text-lg" style="color:#2b2c34;margin-bottom:1rem">
+          Your trusted chiropractor at The Posture Room. Steven blends clinical precision with holistic care to help you realign, recover and move freely.
+        </p>
+        <p style="color:#2b2c34">
+          With experience supporting StretchLab members and performance gyms, Steven brings specialist technique to the heart of Darlinghurst.
+        </p>
+      </div>
+    </div>
+  </section>
 
-<!-- SITELINK ALIAS: Contact -->
-<div id="contact" style="position:relative;top:-80px;height:0;"></div>
-<!-- /SITELINK ALIAS -->
-    <!-- Location Section -->
-    <section id="location" style="background-color: white;">
-        <div class="container">
-            <div class="text-center" style="margin-bottom: 4rem;">
-                <h2 style="font-size: 2rem; font-weight: 700; color: #1f2937;">Find Us</h2>
-                <div style="width: 6rem; height: 0.25rem; background-color: #3b82f6; margin: 1rem auto; border-radius: 9999px;"></div>
-                <p style="margin-top: 1rem; font-size: 1.25rem; color: #4b5563; max-width: 600px; margin-left: auto; margin-right: auto;">We're conveniently located inside StretchLab Darlinghurst - Mezzanine Level. Stop by for a visit!</p>
-            </div>
-            
-            <div class="flex flex-col flex-md-row">
-                <div style="width: 100%; margin-bottom: 2rem; padding-right: 0; padding-right: 2rem;">
-                    <div style="background-color: #f9fafb; border-radius: 0.75rem; padding: 2rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); height: 100%;">
-                        <h3 style="font-size: 1.5rem; font-weight: 600; color: #1f2937; margin-bottom: 1rem;">Contact Information</h3>
-                        
-                        <div style="display: flex; flex-direction: column; gap: 1rem;">
-                            <div style="display: flex; align-items: flex-start;">
-                                <div style="background-color: #dbeafe; border-radius: 9999px; width: 2.5rem; height: 2.5rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 0.25rem;">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="#3b82f6">
-                                        <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
-                                    </svg>
-                                </div>
-                                <div style="margin-left: 1rem;">
-                                    <h4 style="font-weight: 600; color: #1f2937;">Address</h4>
-                                    <p style="color: #4b5563; margin-top: 0.25rem;">216 Crown Street<br>Darlinghurst </p>
-                                </div>
-                            </div>
-                            
-                            <div style="display: flex; align-items: flex-start;">
-                                <div style="background-color: #dbeafe; border-radius: 9999px; width: 2.5rem; height: 2.5rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 0.25rem;">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="#3b82f6">
-                                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
-                                    </svg>
-                                </div>
-                                <div style="margin-left: 1rem;">
+  <!-- Services -->
+  <section id="services" class="bg-white" aria-labelledby="services-title">
+    <div class="container">
+      <div class="section-header">
+        <h2 id="services-title" class="font-bold" style="color:var(--ink)">Our Chiropractic Services</h2>
+        <div class="section-divider"></div>
+        <p style="max-width:600px;margin:1rem auto 0;color:var(--muted);font-size:1.125rem">
+          A complete approach to spine, soft-tissue and movement so you get lasting results.
+        </p>
+      </div>
 
-                                    <h4 style="font-weight: 600; color: #1f2937;">Phone</h4>
-                                    <p style="color: #4b5563; margin-top: 0.25rem;">
-                                      <a href="tel:+61493803236" style="color: #3b82f6;">0493 803 236</a> </p>
-                                    
-                                   <!-- Comment Out  <h4 style="font-weight: 600; color: #1f2937;">Phone</h4> 
-                                    <p style="color: #4b5563; margin-top: 0.25rem;">0493 803 236 </p> -->
-                                </div>
-                            </div>
-                            
-                            <div style="display: flex; align-items: flex-start;">
-                                <div style="background-color: #dbeafe; border-radius: 9999px; width: 2.5rem; height: 2.5rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 0.25rem;">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="#3b82f6">
-                                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
-                                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
-                                    </svg>
-                                </div>
-                                <div style="margin-left: 1rem;">
-                                    <h4 style="font-weight: 600; color: #1f2937;">Email</h4>
-                                    <p style="color: #4b5563; margin-top: 0.25rem;">info@thepostureroom.com.au</p>
-                                </div>
-                            </div>
-                            
-                            <div style="display: flex; align-items: flex-start;">
-                                <div style="background-color: #dbeafe; border-radius: 9999px; width: 2.5rem; height: 2.5rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 0.25rem;">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="#3b82f6">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path>
-                                    </svg>
-                                </div>
-                                <div style="margin-left: 1rem;">
-                                    <h4 style="font-weight: 600; color: #1f2937;">Hours</h4>
-                                    <p style="color: #4b5563; margin-top: 0.25rem;">Wednesday-Thursday: 9am-6pm<br>Saturday: Closed <br>Sunday: Closed</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div style="width: 100%;">
-                    <div style="border-radius: 0.75rem; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); height: 100%;">
-                        <!-- Google Maps iframe - Replace YOUR_GOOGLE_MAPS_EMBED_URL with your actual Google Maps embed URL -->
-                        <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1171.1304700853211!2d151.21481364556632!3d-33.87787745777318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12af0a1c7241f3%3A0x9c55f891ba8fd20e!2sStretchLab%20Darlinghurst!5e0!3m2!1sen!2sau!4v1750338504289!5m2!1sen!2sau"
-      width="100%"
-      height="300"
-      style="border:0;"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-                    </div>
-                </div>
-            </div>
+      <div class="grid grid-cols-1 grid-cols-md-3 gap-10">
+        <!-- 1 -->
+        <div class="service-card" role="article">
+          <div class="service-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 20 20" fill="#3b82f6"><path d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z"/></svg>
+          </div>
+          <h3 style="color:var(--ink);margin-bottom:.75rem">Spinal Adjustments</h3>
+          <p style="color:var(--muted)">Gentle, precise corrections to restore joint motion and relieve nerve irritation.</p>
         </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section style="background-color: #f9fafb; padding: 5rem 0;">
-        <div class="container">
-            <div class="text-center" style="margin-bottom: 4rem;">
-                <h2 style="font-size: 2rem; font-weight: 700; color: #1f2937;">What Our Patients Say</h2>
-                <div style="width: 6rem; height: 0.25rem; background-color: #3b82f6; margin: 1rem auto; border-radius: 9999px;"></div>
-                <p style="margin-top: 1rem; font-size: 1.25rem; color: #4b5563; max-width: 600px; margin-left: auto; margin-right: auto;">Hear from those who have experienced the benefits of our care firsthand.</p>
-            </div>
-            
-            <div class="grid grid-cols-1 grid-cols-md-2 grid-cols-lg-3 gap-8">
-                <div style="background-color: white; border-radius: 0.75rem; padding: 2rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
-                    <div style="display: flex; align-items: center; margin-bottom: 1rem;">
-                        <div style="color: #fbbf24; display: flex;">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                        </div>
-                    </div>
-                    <p style="color: #4b5563; font-style: italic; margin-bottom: 1rem;">"After years of chronic back pain, I finally found relief through regular treatments at The Posture Room & StretchLab. The team is professional, caring, and truly invested in my wellbeing."</p>
-                    <div style="font-weight: 600; color: #1f2937;">Ben M.</div>
-                </div>
-                
-                <div style="background-color: white; border-radius: 0.75rem; padding: 2rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
-                    <div style="display: flex; align-items: center; margin-bottom: 1rem;">
-                        <div style="color: #fbbf24; display: flex;">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                        </div>
-                    </div>
-                    <p style="color: #4b5563; font-style: italic; margin-bottom: 1rem;">"I’ve had a herniated disc for over 10 years, and Posture Room has been a game-changer for me. The targeted assisted stretches and chiro combo have helped relieve pain and reduce the pressure I’ve lived with for so long. The team is knowledgeable, professional, and genuinely cares about your well-being. I feel more mobile, lighter, and so much more comfortable in my day-to-day life. Highly recommend to anyone dealing with chronic back issues or just wanting to move and feel better!."</p>
-                    <div style="font-weight: 600; color: #1f2937;">Ryan O.</div>
-                </div>
-                
-                <div style="background-color: white; border-radius: 0.75rem; padding: 2rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
-                    <div style="display: flex; align-items: center; margin-bottom: 1rem;">
-                        <div style="color: #fbbf24; display: flex;">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                        </div>
-                    </div>
-                    <p style="color: #4b5563; font-style: italic; margin-bottom: 1rem;">"It was our first time here and we had a great time! I had Steven and my partner had Bianca as our flexologist. The stretching session was super intense!! but really good! We are very active so the stretches really helped with our flexibility and stiffness. I found Steven to be very knowledgeable and helpful answering my questions. Thank you both and we look forward to our next session!"</p>
-                    <div style="font-weight: 600; color: #1f2937;">Santisouk K</div>
-                </div>
-            </div>
+        <!-- 2 -->
+        <div class="service-card" role="article">
+          <div class="service-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 20 20" fill="#3b82f6"><path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+          </div>
+          <h3 style="color:var(--ink);margin-bottom:.75rem">Soft Tissue Therapy</h3>
+          <p style="color:var(--muted)">Myofascial release and trigger-point work to reduce tension and improve mobility.</p>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer style="background-color: #1f2937; color: white; padding: 3rem 0;">
-        <div class="container">
-            <div style="display: flex; flex-direction: column; gap: 2rem;">
-                <div style="margin-bottom: 2rem;">
-                    <div style="display: flex; align-items: center;">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="#60a5fa">
-                            <path d="M19.57 8.676a7.312 7.312 0 0 0-7.57-7.676 7.312 7.312 0 0 0-7.57 7.676c0 7.892 7.57 14.324 7.57 14.324s7.57-6.432 7.57-14.324zm-7.57 5.324a3.001 3.001 0 0 1 0-6 3.001 3.001 0 0 1 0 6z"></path>
-                        </svg>
-                        <span style="margin-left: 0.5rem; font-size: 1.5rem; font-weight: 700;">The Posture Roomc</span>
-                    </div>
-                    <p style="margin-top: 1rem; color: #9ca3af; max-width: 20rem;">Dedicated to helping you achieve optimal health through natural, holistic chiropractic care.</p>
-                </div>
-                
-                <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem;">
-                    <div>
-                        <h3 style="font-size: 1.125rem; font-weight: 600; margin-bottom: 1rem;">Quick Links</h3>
-                        <ul style="list-style: none; padding: 0; margin: 0;">
-                            <li style="margin-bottom: 0.5rem;"><a href="#services" style="color: #9ca3af; text-decoration: none;">Services</a></li>
-                            <li style="margin-bottom: 0.5rem;"><a href="#benefits" style="color: #9ca3af; text-decoration: none;">Benefits</a></li>
-                            <li style="margin-bottom: 0.5rem;"><a href="#vision" style="color: #9ca3af; text-decoration: none;">Our Vision</a></li>
-                            <li><a href="#booking" style="color: #9ca3af; text-decoration: none;">Book Now</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div>
-                        <h3 style="font-size: 1.125rem; font-weight: 600; margin-bottom: 1rem;">Contact</h3>
-                        <ul style="list-style: none; padding: 0; margin: 0;">
-                            <!--<li style="margin-bottom: 0.5rem; color: #9ca3af;">0493 803 236</li> Comment OUT --> 
-                            <li style="margin-bottom: 0.5rem; color: #9ca3af;"> <a href="tel:+61493803236" style="color: #9ca3af; text-decoration: none;">0493 803 236</a></li>
-                            <li style="margin-bottom: 0.5rem; color: #9ca3af;">info@thepostureroom.com.au</li>
-                            <li style="color: #9ca3af;">216 Crown Street<br>Darlinghurst, NSW</li>
-                        </ul>
-                    </div>
-                    
-                    <div>
-                        <h3 style="font-size: 1.125rem; font-weight: 600; margin-bottom: 1rem;">Hours</h3>
-                        <ul style="list-style: none; padding: 0; margin: 0;">
-                            <li style="margin-bottom: 0.5rem; color: #9ca3af;">Wed-Thu: 9am-6pm</li>
-                            <li style="margin-bottom: 0.5rem; color: #9ca3af;">Saturday: Closed</li>
-                            <li style="color: #9ca3af;">Sunday: Closed</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            
-            <div style="border-top: 1px solid #374151; margin-top: 3rem; padding-top: 2rem; display: flex; flex-direction: column; align-items: center; gap: 1rem;">
-                <p style="color: #9ca3af;">© 2025 The Posture Room. All rights reserved.</p>
-                <div style="display: flex; gap: 1rem;">
-                    <a href="#" style="color: #9ca3af;">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg>
-                    </a>
-                    <a href="#" style="color: #9ca3af;">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723 10.054 10.054 0 01-3.127 1.184 4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
-                    </a>
-                    <a href="#" style="color: #9ca3af;">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
-                    </a>
-                </div>
-            </div>
+        <!-- 3 -->
+        <div class="service-card" role="article">
+          <div class="service-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 20 20" fill="#3b82f6"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 001.414 1.414L9 9.414V13a1 1 0 102 0V9.414l1.293 1.293a1 1 0 001.414-1.414z" clip-rule="evenodd"/></svg>
+          </div>
+          <h3 style="color:var(--ink);margin-bottom:.75rem">Posture Correction</h3>
+          <p style="color:var(--muted)">Assessment + plan to rebalance habits, ergonomics and movement patterns.</p>
         </div>
-    </footer>
+        <!-- 4 -->
+        <div class="service-card" role="article">
+          <div class="service-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 20 20" fill="#3b82f6"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"/></svg>
+          </div>
+          <h3 style="color:var(--ink);margin-bottom:.75rem">Rehabilitation</h3>
+          <p style="color:var(--muted)">Individualised strength and mobility progressions to lock in your gains.</p>
+        </div>
+        <!-- 5 -->
+        <div class="service-card" role="article">
+          <div class="service-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 20 20" fill="#3b82f6"><path fill-rule="evenodd" d="M7 2a1 1 0 00-.707 1.707L7 4.414v3.758a1 1 0 01-.293.707l-4 4C.817 14.769 2.156 18 4.828 18h10.343c2.673 0 4.012-3.231 2.122-5.121l-4-4A1 1 0 0113 8.172V4.414l.707-.707A1 1 0 0013 2H7zm2 6.172V4h2v4.172a3 3 0 00.879 2.12l1.027 1.028a4 4 0 00-2.171.102l-.47.156a4 4 0 01-2.53 0l-.563-.187a1.993 1.993 0 00-.114-.035l1.063-1.063A3 3 0 009 8.172z" clip-rule="evenodd"/></svg>
+          </div>
+          <h3 style="color:var(--ink);margin-bottom:.75rem">Lifestyle & Nutrition</h3>
+          <p style="color:var(--muted)">Anti-inflammatory guidance and habit support that complements your care.</p>
+        </div>
+        <!-- 6 -->
+        <div class="service-card" role="article">
+          <div class="service-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 20 20" fill="#3b82f6"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"/></svg>
+          </div>
+          <h3 style="color:var(--ink);margin-bottom:.75rem">Preventative Care</h3>
+          <p style="color:var(--muted)">Stay well with maintenance plans tailored to your goals and training load.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script>
-        // Mobile menu toggle
-        const menuToggle = document.getElementById('menu-toggle');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        menuToggle.addEventListener('click', function() {
-            mobileMenu.classList.toggle('active');
-        });
-        
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                
-                if (targetElement) {
-                    const navHeight = document.querySelector('nav').offsetHeight;
-                    const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navHeight;
-                    
-                    window.scrollTo({
-                        top: targetPosition,
-                        behavior: 'smooth'
-                    });
-                    
-                    // Close mobile menu if open
-                    if (mobileMenu.classList.contains('active')) {
-                        mobileMenu.classList.remove('active');
-                    }
-                }
-            });
-        });
-    </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'967d9e229554e7c0',t:'MTc1Mzk3MDM4MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+  <!-- Benefits -->
+  <section id="benefits" style="background:#f9fafb" aria-labelledby="benefits-title">
+    <div class="container">
+      <div class="section-header">
+        <h2 id="benefits-title" class="font-bold" style="color:var(--ink)">Benefits of Chiropractic Care</h2>
+        <div class="section-divider"></div>
+        <p style="max-width:600px;margin:1rem auto 0;color:var(--muted);font-size:1.125rem">Regular care to reduce pain, move better and feel more resilient.</p>
+      </div>
+
+      <div class="grid grid-cols-1 grid-cols-md-3 gap-8">
+        <div class="benefit-card" style="background:#fff;border-radius:.75rem;padding:2rem;box-shadow:0 4px 6px -1px rgba(0,0,0,.1)">
+          <div aria-hidden="true" style="font-size:2rem;margin-bottom:.5rem">🔄</div>
+          <h3 style="color:var(--ink);margin-bottom:.75rem">Pain Relief</h3>
+          <p style="color:var(--muted)">Back, neck, headaches and joints—without relying on medication.</p>
+        </div>
+        <div class="benefit-card" style="background:#fff;border-radius:.75rem;padding:2rem;box-shadow:0 4px 6px -1px rgba(0,0,0,.1)">
+          <div aria-hidden="true" style="font-size:2rem;margin-bottom:.5rem">⚡</div>
+          <h3 style="color:var(--ink);margin-bottom:.75rem">Improved Mobility</h3>
+          <p style="color:var(--muted)">Restore range with targeted adjustments and soft-tissue work.</p>
+        </div>
+        <div class="benefit-card" style="background:#fff;border-radius:.75rem;padding:2rem;box-shadow:0 4px 6px -1px rgba(0,0,0,.1)">
+          <div aria-hidden="true" style="font-size:2rem;margin-bottom:.5rem">🧠</div>
+          <h3 style="color:var(--ink);margin-bottom:.75rem">Nervous System</h3>
+          <p style="color:var(--muted)">Optimise neural communication for better overall function.</p>
+        </div>
+        <div class="benefit-card" style="background:#fff;border-radius:.75rem;padding:2rem;box-shadow:0 4px 6px -1px rgba(0,0,0,.1)">
+          <div aria-hidden="true" style="font-size:2rem;margin-bottom:.5rem">💤</div>
+          <h3 style="color:var(--ink);margin-bottom:.75rem">Better Sleep</h3>
+          <p style="color:var(--muted)">Ease the discomfort that messes with quality sleep.</p>
+        </div>
+        <div class="benefit-card" style="background:#fff;border-radius:.75rem;padding:2rem;box-shadow:0 4px 6px -1px rgba(0,0,0,.1)">
+          <div aria-hidden="true" style="font-size:2rem;margin-bottom:.5rem">🛡️</div>
+          <h3 style="color:var(--ink);margin-bottom:.75rem">Resilience</h3>
+          <p style="color:var(--muted)">Lower stress load; support recovery between sessions.</p>
+        </div>
+        <div class="benefit-card" style="background:#fff;border-radius:.75rem;padding:2rem;box-shadow:0 4px 6px -1px rgba(0,0,0,.1)">
+          <div aria-hidden="true" style="font-size:2rem;margin-bottom:.5rem">🧘</div>
+          <h3 style="color:var(--ink);margin-bottom:.75rem">Calm & Focus</h3>
+          <p style="color:var(--muted)">Feel lighter, looser and more present day-to-day.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vision -->
+  <section id="vision" class="bg-white" aria-labelledby="vision-title">
+    <div class="container">
+      <div class="flex flex-col flex-md-row items-center">
+        <div class="w-md-1/2 mb-10 mb-md-0" style="padding-right:1rem" aria-hidden="true">
+          <svg width="100%" height="300" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="300" cy="200" r="150" fill="#4facfe" opacity="0.1"/>
+            <circle cx="300" cy="200" r="120" fill="#4facfe" opacity="0.2"/>
+            <circle cx="300" cy="200" r="90" fill="#4facfe" opacity="0.3"/>
+            <path d="M300,110 L300,290 M210,200 L390,200" stroke="#4facfe" stroke-width="8" stroke-linecap="round"/>
+            <circle cx="300" cy="200" r="30" fill="#4facfe"/>
+          </svg>
+        </div>
+        <div class="w-md-1/2">
+          <h2 id="vision-title" class="font-bold" style="color:var(--ink)">Our Vision</h2>
+          <div class="section-divider" style="margin-left:0"></div>
+          <p style="margin-top:1.5rem;font-size:1.125rem;color:var(--muted)">A community moving at its best through simple, natural care that lasts.</p>
+          <ul style="margin-top:1rem;list-style:none;padding:0;color:var(--muted)">
+            <li style="display:flex;align-items:flex-start;margin:.75rem 0">
+              <svg width="24" height="24" viewBox="0 0 20 20" fill="#3b82f6" style="margin-right:.5rem;flex-shrink:0"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
+              Personalised care that targets root causes—not just symptoms.
+            </li>
+            <li style="display:flex;align-items:flex-start;margin:.75rem 0">
+              <svg width="24" height="24" viewBox="0 0 20 20" fill="#3b82f6" style="margin-right:.5rem;flex-shrink:0"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
+              Education that links spinal health with lifestyle and performance.
+            </li>
+            <li style="display:flex;align-items:flex-start;margin:.75rem 0">
+              <svg width="24" height="24" viewBox="0 0 20 20" fill="#3b82f6" style="margin-right:.5rem;flex-shrink:0"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
+              Plans that empower you to take charge between visits.
+            </li>
+            <li style="display:flex;align-items:flex-start;margin:.75rem 0">
+              <svg width="24" height="24" viewBox="0 0 20 20" fill="#3b82f6" style="margin-right:.5rem;flex-shrink:0"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
+              A friendly, welcoming space where you feel heard and supported.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking (Cliniko) -->
+  <section id="booking" class="hero-gradient" aria-labelledby="booking-title">
+    <div class="container">
+      <div class="text-center" style="margin-bottom:3rem">
+        <h2 id="booking-title" class="text-3xl font-bold" style="color:#fff">Book Your Appointment</h2>
+        <div class="w-24 h-1" style="background:#fff;margin:.75rem auto;border-radius:9999px"></div>
+        <p style="margin-top:1rem;font-size:1.125rem;color:#fff;opacity:.9;max-width:42rem;margin-left:auto;margin-right:auto">
+          Secure your spot below with our embedded booking form.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-lg" style="padding:1rem">
+        <iframe
+          id="cliniko-44533978"
+          src="https://the-posture-room.au4.cliniko.com/bookings?embedded=true"
+          title="The Posture Room booking form"
+          frameborder="0"
+          loading="lazy"
+          width="100%"
+          height="1000"
+          style="pointer-events:auto"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Cliniko auto-resize + focus
+    window.addEventListener('message', function(e){
+      var f = document.getElementById('cliniko-44533978');
+      if (typeof e.data !== 'string' || !f) return;
+      if (e.data.indexOf('cliniko-bookings-resize') > -1) {
+        var h = Number(e.data.split(':')[1]);
+        if (!isNaN(h) && h > 400) f.style.height = h + 'px';
+      }
+      if (e.data.indexOf('cliniko-bookings-page') > -1) {
+        f.scrollIntoView({behavior:'smooth', block:'start'});
+      }
+    });
+  </script>
+
+  <!-- Location -->
+  <div id="contact" style="position:relative;top:-80px;height:0"></div>
+  <section id="location" class="bg-white" aria-labelledby="location-title">
+    <div class="container">
+      <div class="text-center" style="margin-bottom:4rem">
+        <h2 id="location-title" class="font-bold" style="color:var(--ink)">Find Us</h2>
+        <div class="section-divider"></div>
+        <p style="margin-top:1rem;font-size:1.125rem;color:var(--muted);max-width:600px;margin-left:auto;margin-right:auto">
+          Inside StretchLab Darlinghurst – Mezzanine Level.
+        </p>
+      </div>
+
+      <div class="flex flex-col flex-md-row">
+        <div style="width:100%;margin-bottom:2rem;padding-right:2rem">
+          <div class="rounded-xl shadow-md" style="background:#f9fafb;padding:2rem;height:100%">
+            <h3 class="font-semibold" style="font-size:1.5rem;color:var(--ink);margin-bottom:1rem">Contact Information</h3>
+
+            <div style="display:flex;flex-direction:column;gap:1rem">
+              <!-- Address -->
+              <div style="display:flex;align-items:flex-start">
+                <div style="background:#dbeafe;border-radius:9999px;width:2.5rem;height:2.5rem;display:flex;align-items:center;justify-content:center;margin-top:.25rem" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="#3b82f6"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>
+                </div>
+                <div style="margin-left:1rem">
+                  <h4 class="font-semibold" style="color:var(--ink)">Address</h4>
+                  <p style="color:var(--muted);margin-top:.25rem">216 Crown Street<br/>Darlinghurst NSW 2010</p>
+                </div>
+              </div>
+
+              <!-- Phone -->
+              <div style="display:flex;align-items:flex-start">
+                <div style="background:#dbeafe;border-radius:9999px;width:2.5rem;height:2.5rem;display:flex;align-items:center;justify-content:center;margin-top:.25rem" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="#3b82f6"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
+                </div>
+                <div style="margin-left:1rem">
+                  <h4 class="font-semibold" style="color:var(--ink)">Phone</h4>
+                  <p style="color:var(--muted);margin-top:.25rem"><a href="tel:+61493803236" style="color:var(--brand)">0493 803 236</a></p>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div style="display:flex;align-items:flex-start">
+                <div style="background:#dbeafe;border-radius:9999px;width:2.5rem;height:2.5rem;display:flex;align-items:center;justify-content:center;margin-top:.25rem" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="#3b82f6"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                </div>
+                <div style="margin-left:1rem">
+                  <h4 class="font-semibold" style="color:var(--ink)">Email</h4>
+                  <p style="color:var(--muted);margin-top:.25rem"><a href="mailto:info@thepostureroom.com.au" style="color:var(--muted)">info@thepostureroom.com.au</a></p>
+                </div>
+              </div>
+
+              <!-- Hours -->
+              <div style="display:flex;align-items:flex-start">
+                <div style="background:#dbeafe;border-radius:9999px;width:2.5rem;height:2.5rem;display:flex;align-items:center;justify-content:center;margin-top:.25rem" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="#3b82f6"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/></svg>
+                </div>
+                <div style="margin-left:1rem">
+                  <h4 class="font-semibold" style="color:var(--ink)">Hours</h4>
+                  <p style="color:var(--muted);margin-top:.25rem">Wednesday–Thursday: 9am–6pm<br/>Saturday: Closed<br/>Sunday: Closed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Map -->
+        <div style="width:100%">
+          <div class="rounded-xl shadow-md" style="overflow:hidden;height:100%">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1171.1304700853211!2d151.21481364556632!3d-33.87787745777318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12af0a1c7241f3%3A0x9c55f891ba8fd20e!2sStretchLab%20Darlinghurst!5e0!3m2!1sen!2sau!4v1750338504289!5m2!1sen!2sau"
+              width="100%"
+              height="300"
+              style="border:0"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Map to The Posture Room"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section aria-labelledby="testimonials-title" style="background:#f9fafb">
+    <div class="container">
+      <div class="text-center" style="margin-bottom:4rem">
+        <h2 id="testimonials-title" class="font-bold" style="color:var(--ink)">What Our Patients Say</h2>
+        <div class="section-divider"></div>
+        <p style="margin-top:1rem;font-size:1.125rem;color:var(--muted);max-width:600px;margin-left:auto;margin-right:auto">
+          Real stories from people moving and feeling better.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 grid-cols-md-2 grid-cols-lg-3 gap-8">
+        <!-- Testimonial cards (unchanged content, tidied markup) -->
+        <article style="background:#fff;border-radius:.75rem;padding:2rem;box-shadow:0 4px 6px -1px rgba(0,0,0,.1)">
+          <div style="display:flex;align-items:center;margin-bottom:1rem" aria-hidden="true">
+            <div style="color:#fbbf24;display:flex">
+              <span>★★★★★</span>
+            </div>
+          </div>
+          <p style="color:var(--muted);font-style:italic;margin-bottom:1rem">
+            "After years of chronic back pain, I finally found relief through regular treatments at The Posture Room & StretchLab. The team is professional, caring, and truly invested in my wellbeing."
+          </p>
+          <div class="font-semibold" style="color:var(--ink)">Ben M.</div>
+        </article>
+
+        <article style="background:#fff;border-radius:.75rem;padding:2rem;box-shadow:0 4px 6px -1px rgba(0,0,0,.1)">
+          <div style="display:flex;align-items:center;margin-bottom:1rem" aria-hidden="true"><div style="color:#fbbf24;display:flex"><span>★★★★★</span></div></div>
+          <p style="color:var(--muted);font-style:italic;margin-bottom:1rem">
+            "I’ve had a herniated disc for over 10 years, and Posture Room has been a game-changer. The assisted stretches + chiro combo eased pain and pressure. I’m more mobile and comfortable day-to-day."
+          </p>
+          <div class="font-semibold" style="color:var(--ink)">Ryan O.</div>
+        </article>
+
+        <article style="background:#fff;border-radius:.75rem;padding:2rem;box-shadow:0 4px 6px -1px rgba(0,0,0,.1)">
+          <div style="display:flex;align-items:center;margin-bottom:1rem" aria-hidden="true"><div style="color:#fbbf24;display:flex"><span>★★★★★</span></div></div>
+          <p style="color:var(--muted);font-style:italic;margin-bottom:1rem">
+            "First time here—great experience! I had Steven and my partner had Bianca. Intense (in a good way!) and super helpful for our flexibility and stiffness. Can’t wait for the next session."
+          </p>
+          <div class="font-semibold" style="color:var(--ink)">Santisouk K</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div style="display:flex;flex-direction:column;gap:2rem">
+        <div style="margin-bottom:1rem">
+          <div style="display:flex;align-items:center">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="#60a5fa" aria-hidden="true">
+              <path d="M19.57 8.676a7.312 7.312 0 0 0-7.57-7.676 7.312 7.312 0 0 0-7.57 7.676c0 7.892 7.57 14.324 7.57 14.324s7.57-6.432 7.57-14.324zm-7.57 5.324a3.001 3.001 0 0 1 0-6 3.001 3.001 0 0 1 0 6z"></path>
+            </svg>
+            <span style="margin-left:.5rem;font-size:1.5rem;font-weight:700">The Posture Room</span>
+          </div>
+          <p style="margin-top:1rem;color:#9ca3af;max-width:22rem">
+            Helping you achieve optimal health through natural, holistic chiropractic care.
+          </p>
+        </div>
+
+        <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2rem">
+          <div>
+            <h3 class="font-semibold" style="font-size:1.125rem;margin-bottom:1rem">Quick Links</h3>
+            <ul style="list-style:none;padding:0;margin:0">
+              <li style="margin-bottom:.5rem"><a href="#services" style="color:#9ca3af">Services</a></li>
+              <li style="margin-bottom:.5rem"><a href="#benefits" style="color:#9ca3af">Benefits</a></li>
+              <li style="margin-bottom:.5rem"><a href="#vision" style="color:#9ca3af">Our Vision</a></li>
+              <li><a href="#booking" style="color:#9ca3af">Book Now</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="font-semibold" style="font-size:1.125rem;margin-bottom:1rem">Contact</h3>
+            <ul style="list-style:none;padding:0;margin:0">
+              <li style="margin-bottom:.5rem"><a href="tel:+61493803236" style="color:#9ca3af">0493 803 236</a></li>
+              <li style="margin-bottom:.5rem"><a href="mailto:info@thepostureroom.com.au" style="color:#9ca3af">info@thepostureroom.com.au</a></li>
+              <li style="color:#9ca3af">216 Crown Street<br/>Darlinghurst NSW 2010</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="font-semibold" style="font-size:1.125rem;margin-bottom:1rem">Hours</h3>
+            <ul style="list-style:none;padding:0;margin:0">
+              <li style="margin-bottom:.5rem;color:#9ca3af">Wed–Thu: 9am–6pm</li>
+              <li style="margin-bottom:.5rem;color:#9ca3af">Saturday: Closed</li>
+              <li style="color:#9ca3af">Sunday: Closed</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div style="border-top:1px solid #374151;margin-top:3rem;padding-top:2rem;display:flex;flex-direction:column;align-items:center;gap:1rem">
+        <p style="color:#9ca3af">© 2025 The Posture Room. All rights reserved.</p>
+        <div style="display:flex;gap:1rem">
+          <a href="https://www.facebook.com/thepostureroom" aria-label="Facebook" style="color:#9ca3af">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22.675 0h-21.35C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24h11.495v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.407 24 24 23.407 24 22.675V1.325C24 .593 23.407 0 22.675 0z"/></svg>
+          </a>
+          <a href="https://www.twitter.com/" aria-label="Twitter" style="color:#9ca3af">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723 10.054 10.054 0 01-3.127 1.184 4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/thepostureroom" aria-label="Instagram" style="color:#9ca3af">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.206.055 1.956.24 2.41.403a4.9 4.9 0 011.77 1.152 4.9 4.9 0 011.152 1.77c.163.454.348 1.204.403 2.41.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.055 1.206-.24 1.956-.403 2.41a4.9 4.9 0 01-1.152 1.77 4.9 4.9 0 01-1.77 1.152c-.454.163-1.204.348-2.41.403-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.206-.055-1.956-.24-2.41-.403a4.9 4.9 0 01-1.77-1.152 4.9 4.9 0 01-1.152-1.77c-.163-.454-.348-1.204-.403-2.41C2.175 15.585 2.163 15.205 2.163 12s.012-3.584.07-4.85c.055-1.206.24-1.956.403-2.41a4.9 4.9 0 011.152-1.77 4.9 4.9 0 011.77-1.152c.454-.163 1.204-.348 2.41-.403C8.416 2.175 8.796 2.163 12 2.163zm0 3.678a6.159 6.159 0 100 12.318 6.159 6.159 0 000-12.318zm7.846-.237a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Mobile menu toggle
+    const menuToggle=document.getElementById('menu-toggle');
+    const mobileMenu=document.getElementById('mobile-menu');
+    menuToggle.addEventListener('click',()=>mobileMenu.classList.toggle('active'));
+
+    // Smooth in-page anchor scrolling with fixed-nav offset
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',e=>{
+        const id=a.getAttribute('href');
+        if (!id || id==="#") return;
+        const target=document.querySelector(id);
+        if(!target) return;
+        e.preventDefault();
+        const navHeight=document.querySelector('nav').offsetHeight;
+        const y=target.getBoundingClientRect().top + window.pageYOffset - navHeight;
+        window.scrollTo({top:y,behavior:'smooth'});
+        if(mobileMenu.classList.contains('active')) mobileMenu.classList.remove('active');
+      });
+    });
+  </script>
+</body>
 </html>
